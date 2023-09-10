@@ -1,0 +1,141 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+ 
+  
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;  
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.wrapper{  
+    width: 70%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    font-family: 'Libre Franklin', sans-serif;
+}
+.top h2{
+    font-weight: 400;
+    margin-top: 30px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+.col-auto .custom-btn{
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 50px;
+    width: 120px;
+    box-shadow: black 0px 2px 8px -4px;
+    padding-block: 8px;
+}
+.col-auto .custom-btn:hover{
+    opacity: 0.6;
+} 
+.col-auto .form-control{ 
+    border-radius: 50px; 
+    width: 300px;
+    padding-left: 20px;
+    padding-block: 8px;
+    font-size: 1rem;
+}
+
+.col-auto .error{
+    border: solid red 1px;
+}
+.col-auto small{ 
+    justify-self: flex-start;
+    color: red;
+    font-size: .8rem;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.socials{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block: 30px 20px;
+
+}
+.wrapper p{
+    color: hsl(209, 33%, 12%);
+    font-weight: 300;
+}
+.circle-container {
+    width: 30px; /* Adjust the width and height as needed */
+    height: 30px; 
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Icon color */
+    font-size: 20px;  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.circle-container:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: aliceblue;
+    cursor: pointer;
+}
+h2{
+    word-spacing: 5px;
+}
+h2:after{
+	content:attr(data-text);
+	color:hsl(209, 33%, 12%);
+    font-weight: 700;
+	transform:translateX(-100%);
+	position:absolute;
+}
+
+ i:hover{
+    color: aliceblue;
+
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px; 
+}
+i{
+    color: hsl(223, 87%, 63%);
+    font-size: 14px;
+} 
+.copy{
+    color: hsl(0, 0%, 59%);
+    
+}
+@media  (min-width:35px) and (max-width:375px) { 
+    .wrapper{ 
+        width: 90%;
+    }
+    .col-auto .custom-btn{
+        width: 300px;
+    }
+    .illustration{
+        width: 90%;
+    }
+    .socials{
+        width: 50%;
+    } 
+    .col-auto small{
+        justify-content: center;
+        font-size: .8rem;
+        font-style: italic;
+        
+    }
+     
+}
